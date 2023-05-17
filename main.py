@@ -4,8 +4,8 @@ liczka_paczek = 0
 waga_paczki = 0
 waga_elemtow = 0
 suma_elemetów_w_paczce = 0
-najwieksza_liczba_pustych_kg = 1
-najwiecej_pustych_kg_w_paczce = 1
+najwieksza_liczba_pustych_kg = 0
+najwiecej_pustych_kg_w_paczce = 0
 for element in range(liczba_elemntów):
     waga = int(input('Podaj wage elemntu: '))
     if waga < 1 or waga > 10:
@@ -37,7 +37,7 @@ for element in range(liczba_elemntów):
         waga_paczki = waga
         suma_elemetów_w_paczce = 1
 
-if waga_paczki < 20:
+if 0 < waga_paczki < 20:
     liczka_paczek += 1
     puste_kg_w_paczce = 20 - waga_paczki
     if puste_kg_w_paczce > najwieksza_liczba_pustych_kg:
